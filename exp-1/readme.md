@@ -90,7 +90,7 @@ INSERT INTO GRADE_REPORT VALUES(8,92,'A');
 INSERT INTO GRADE_REPORT VALUES(8,102,'B');
 INSERT INTO GRADE_REPORT VALUES(8,135,'A');
 ```
-![output](week-1(outputs)/insert-grade_report.jpeg)
+![output](week-1(outputs)/insert-grade.jpeg)
 # table of student
 ```
 SELECT * FROM student;
@@ -133,4 +133,4 @@ DROP section;
 ```
 DROP grade_report;
 ```
-![output](week-1(outputs)/drop-grade_report.jpeg)
+![output](week-1(outputs)/drop-grade.jpeg)

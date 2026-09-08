@@ -56,7 +56,7 @@ DESC section;
 ```
 DESC grade_report;
 ```
-![output](week-1(outputs)/desc-grade_report.jpeg)
+![output](week-1(outputs)/desc-gradereport.jpeg)
 # insertion into student
 ```
 INSERT INTO student VALUES ('Smith', 17, 1, 'CS');

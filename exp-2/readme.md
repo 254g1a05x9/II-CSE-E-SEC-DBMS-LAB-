@@ -1,22 +1,26 @@
-#DBMSLAB WEEK2
-#Sailors table creation
+# DBMSLAB WEEK2
+# Sailors table creation
+...
 CREATE TABLE Sailors (
     sid NUMBER PRIMARY KEY,
     sname VARCHAR2(50) NOT NULL,
     rating NUMBER NOT NULL,
     age NUMBER(4,1) NOT NULL
 );
+...
 ![output 1](week2(outputs)/sailors.jpeg)
-#Boats table creation
+# Boats table creation
+...
 CREATE TABLE Boats (
  bid NUMBER PRIMARY KEY,
  bname VARCHAR2(20) NOT NULL,
  color VARCHAR2(10) NOT NULL
 );
+...
 ![output 2](week2(outputs)/boats.jpeg)
 
-#reserves table creation
-
+# reserves table creation
+...
 CREATE TABLE Reserves (
     sid NUMBER NOT NULL,
     bid NUMBER NOT NULL,
@@ -25,6 +29,7 @@ CREATE TABLE Reserves (
     FOREIGN KEY (sid) REFERENCES Sailors(sid),
     FOREIGN KEY (bid) REFERENCES Boats(bid)
 );
+...
 ![output 3](week2(outputs)/reserves.jpeg)
 SELECT * FROM tab;
 SELECT * FROM Reserves;

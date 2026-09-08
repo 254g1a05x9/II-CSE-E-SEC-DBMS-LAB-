@@ -1,21 +1,26 @@
-#WEEK-1 DBMSLAB
-#students table creation
+# WEEK-1 DBMSLAB
+# students table creation
+...
 CREATE TABLE student (
     name VARCHAR2(50),
     student_number NUMBER,
     class VARCHAR2(20),
     major VARCHAR2(20)
 );
+...
 ![output](week-1(outputs)/1-table.jpeg)
-#course table creation
+# course table creation
+...
 CREATE TABLE course (
     course_name VARCHAR2(50),
     course_number VARCHAR2(10),
     credit_hours NUMBER,
     department VARCHAR2(30)
 );
+...
 ![output](week-1(outputs)/2-table.jpeg)
-#section table creation
+# section table creation
+...
 CREATE TABLE section (
     section_identifier NUMBER,
     course_number VARCHAR2(10),
@@ -23,17 +28,22 @@ CREATE TABLE section (
     year NUMBER,
     instructor VARCHAR2(50)
 );
+...
 ![output](week-1(outputs)/3-table.jpeg)
-#grade_report table creation
+# grade_report table creation
+...
 CREATE TABLE grade_report (
     student_number NUMBER,
     section_identifier NUMBER,
     grade VARCHAR2(1)
 );
+...
 ![output](week-1(outputs)/4-table.jpeg)
 
-#ddescribing of tables
+# describing of tables
+...
 DESC student;
+...
 ![output](week-1(outputs)/desc-student.jpeg)
 DESC course;
 ![output](week-1(outputs)/desc-course.jpeg)

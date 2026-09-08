@@ -31,13 +31,19 @@ CREATE TABLE Reserves (
 );
 ```
 ![output 3](week2(outputs)/reserves.jpeg)
-
+```
 SELECT * FROM tab;
+```
+```
 SELECT * FROM Reserves;
+```
+```
 SELECT age FROM Sailors;
-
+```
+```
 INSERT INTO Boats
 VALUES(22,'Dustin',7,45.0);
+```
 ```
 INSERT INTO Sailors VALUES (22, 'Dustin', 7, 45.0);
 INSERT INTO Sailors VALUES (29, 'Brutus', 1, 33.0);
@@ -302,7 +308,7 @@ WHERE age =
 ```
 ![output](week2(outputs)/que-24.jpeg)
 
-
+```
 SELECT COUNT(*)
 FROM Sailors;
 
@@ -319,6 +325,7 @@ WHERE age >
 
 FROM Sailors
 GROUP BY rating;
+```
 
 ```
 SELECT rating, MIN(age)

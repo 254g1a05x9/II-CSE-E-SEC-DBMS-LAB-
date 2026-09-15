@@ -313,136 +313,119 @@ WHERE NOT EXISTS
         AND r.bid = b.bid
     )
 );
-
+```
+![output](week2(outputs)/que-21.jpeg)
+#q22
+```
+SELECT AVG(age)
+FROM Sailors;
+```
+![output](week2(outputs)/que-22.jpeg)
+#q23
+```
 SELECT AVG(age)
 FROM Sailors
 WHERE rating = 10;
+```
+![output](week2(outputs)/que-23.jpeg)
+#q24
+```
 SELECT sname, age
 FROM Sailors
-WHERE age =
-(
+WHERE age =(SELECT MAX (age)FROM Sailors);
 ```
-![output](week2(outputs)/que-21.jpeg)
-# q22
-
+![output](week2(outputs)/que-24.jpeg)
+#q25
 ```
 SELECT COUNT(*)
 FROM Sailors;
-
-
+```
+![output](week2(outputs)/que-25.jpeg)
+#Q26
+```
 SELECT COUNT(DISTINCT sname)
 FROM Sailors;
-
+```
+![output](week2(outputs)/que-26.jpeg)
+#Q27
+```
+SELECT Sname
 FROM Sailors
 WHERE age >
 (
     SELECT MAX(age)
-);
-
-
 FROM Sailors
-GROUP BY rating;
-
+WHERE rating=10;
+);
+```
+![output](week2(outputs)/que-27.jpeg)
+#Q28
+```
 SELECT rating, MIN(age)
 FROM Sailors
 WHERE age >= 18
 GROUP BY rating
 HAVING COUNT(*) >= 2;
 ```
-![output](week2(outputs)/que-22.jpeg)
-# q23
-```
-SELECT b.bid, COUNT(r.sid) AS reservations
-FROM Boats b
-LEFT JOIN Reserves r
-ON b.bid = r.bid
-WHERE b.color = 'red'
-GROUP BY b.bid;
-```
-![output](week2(outputs)/que-23.jpeg)
-# q24
-```
-SELECT rating, AVG(age)
-FROM Sailors
-GROUP BY rating
-HAVING COUNT(*) >= 2;
-```
-![output](week2(outputs)/que-24.jpeg)
-# q25
-```
-SELECT rating, AVG(age)
-FROM Sailors
-WHERE age >= 18
-GROUP BY rating
-HAVING COUNT(*) >= 2;
-```
-![output](week2(outputs)/que-25.jpeg)
-# q26
-```
-SELECT rating, AVG(age)
-FROM Sailors
-WHERE age >= 18
-GROUP BY rating
-HAVING COUNT(*) >= 2;
-```
-![output](week2(outputs)/que-26.jpeg)
-# q27
-```
-SELECT rating, AVG(age)
-FROM Sailors
-WHERE age >= 18
-GROUP BY rating
-HAVING COUNT(*) >= 2;
-```
-![output](week2(outputs)/que-27.jpeg)
-# q28
-```
-SELECT rating
-FROM Sailors
-GROUP BY rating
-HAVING AVG(age) =
-(
-    SELECT MIN(avg_age)
-    FROM
-    (
-        SELECT AVG(age) AS avg_age
-        FROM Sailors
-        GROUP BY rating
-    ) x
-);
-```
-![output](week2(outputs)/que-28.jpeg)
+![output](week2(outputs)/que-28.jpeg) 
+ 
 # q29
+```
+SELECT rating, AVG(age)
+FROM Sailors
+WHERE age>=18
+GROUP BY rating HAVING COUNT(*)>=2;
+```
 ![output](week2(outputs)/que-29.jpeg)
 # q30
 ```
-SELECT rating, MIN(age)
+SELECT b.bid,b.name
+COUNT(*) FROM Boats b, Reserves r
+WHERE b.bid = r.bid
+AND b.color = 'red'
+GROUP BY b.bid,b.name;
 ```
 ![output](week2(outputs)/que-30.jpeg)
 # q31
   ```
-    WHERE rating = 10
-    FROM Sailors
-SELECT sname
+    SELECT rating, MIN(age)
+FROM Sailors
+WHERE age >= 18
+GROUP BY rating
+HAVING COUNT(*) >= 2;
 ```
 ![output](week2(outputs)/que-31.jpeg)
 # q32
+```
+SELECT rating, AVG(age)
+FROM Sailors
+WHERE age >= 18
+GROUP BY rating
+HAVING COUNT(*) >= 2;
+```
 ![output](week2(outputs)/que-32.jpeg)
 # q33
-);
 ```
-    FROM Sailors
-    SELECT MAX(age)
+    SELECT rating, AVG(age)
+FROM Sailors
+WHERE age >= 18
+GROUP BY rating
+HAVING COUNT(*) >= 2;
 ```
-
 ![output](week2(outputs)/que-33.jpeg)
 
-```
-FROM Sailors;
-```
-![output](week2(outputs)/que-22.jpeg)
 # q34
 ```
-SELECT AVG(age)
+SELECT rating FROM Sailors
+GROUP BY rating
+HAVING AVG(age)<=ALL
+(
+SELECT MIN(avg_age)
+FROM
+)
+SELECT AVG(age) AS avg_age
+FROM Sailors
+GROUP BY rating
+);
 ```
 ![output](week2(outputs)/que-34.jpeg)

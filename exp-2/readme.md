@@ -315,13 +315,13 @@ WHERE NOT EXISTS
 );
 ```
 ![output](week2(outputs)/que-21.jpeg)
-#q22
+# q22
 ```
 SELECT AVG(age)
 FROM Sailors;
 ```
 ![output](week2(outputs)/que-22.jpeg)
-#q23
+# q23
 ```
 SELECT AVG(age)
 FROM Sailors
@@ -335,19 +335,19 @@ FROM Sailors
 WHERE age =(SELECT MAX (age)FROM Sailors);
 ```
 ![output](week2(outputs)/que-24.jpeg)
-#q25
+# q25
 ```
 SELECT COUNT(*)
 FROM Sailors;
 ```
 ![output](week2(outputs)/que-25.jpeg)
-#Q26
+# Q26
 ```
 SELECT COUNT(DISTINCT sname)
 FROM Sailors;
 ```
 ![output](week2(outputs)/que-26.jpeg)
-#Q27
+# Q27
 ```
 SELECT Sname
 FROM Sailors
@@ -359,7 +359,7 @@ WHERE rating=10;
 );
 ```
 ![output](week2(outputs)/que-27.jpeg)
-#Q28
+# Q28
 ```
 SELECT rating, MIN(age)
 FROM Sailors

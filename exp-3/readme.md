@@ -80,7 +80,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
        TO_CHAR(HIRE_DATE, 'DD-MON-YYYY') AS HIRE_DATE
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q1.png)
+![output 1](week3(outputs)/q1-a.png)
 
 
 # q2
@@ -89,7 +89,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
        TO_CHAR(SALARY, 'L99,999,999') AS SALARY
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q2.png)
+![output 1](week3(outputs)/q2-a.png)
 
 
 # q3
@@ -98,7 +98,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
        TO_NUMBER(SALARY) + 5000 AS NEW_SALARY
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q3.png)
+![output 1](week3(outputs)/q3-a.png)
 
 
 # q4
@@ -108,7 +108,7 @@ FROM EMPLOYEE
 WHERE HIRE_DATE > TO_DATE('01-JAN-2020', 'DD-MON-YYYY');
 ```
 
-![output 1](week3(outputs)/q4.png)
+![output 1](week3(outputs)/q4-a.png)
 
 
 # q5
@@ -117,7 +117,7 @@ SELECT EMPLOYEE_ID,
        FIRST_NAME || ' ' || LAST_NAME AS FULL_NAME
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q5.png)
+![output 1](week3(outputs)/q5-a.png)
 
 
 # q6
@@ -126,7 +126,7 @@ SELECT EMPLOYEE_ID,
        CONCAT(FIRST_NAME, CONCAT(' ', LAST_NAME)) AS FULL_NAME
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q6.png)
+![output 1](week3(outputs)/q6-a.png)
 
 
 # q7
@@ -135,7 +135,7 @@ SELECT FIRST_NAME,
        LPAD(FIRST_NAME, 10, '*') AS PADDED_NAME
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q7.png)
+![output 1](week3(outputs)/q7-a.png)
 
 
 # q8
@@ -144,7 +144,7 @@ SELECT FIRST_NAME,
        RPAD(FIRST_NAME, 10, '*') AS PADDED_NAME
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q8.png)
+![output 1](week3(outputs)/q8-a.png)
 
 
 # q9
@@ -153,7 +153,7 @@ SELECT FIRST_NAME,
        LTRIM(FIRST_NAME) AS TRIMMED_NAME
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q9.png)
+![output 1](week3(outputs)/q9-a.png)
 
 
 # q10
@@ -162,27 +162,27 @@ SELECT FIRST_NAME,
        RTRIM(FIRST_NAME) AS TRIMMED_NAME
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q10.png)
+![output 1](week3(outputs)/q10-a.png)
 
 # q11
 ```
 SELECT FIRST_NAME,
 ```
-![output 1](week3(outputs)/q11.png)
+![output 1](week3(outputs)/q11-a.png)
 
 # q12
 ```
 SELECT FIRST_NAME,
        UPPER(FIRST_NAME) AS UPPERCASE_NAME
 ```
-![output 1](week3(outputs)/q12.png)
+![output 1](week3(outputs)/q12-a.png)
 
 # q13
 ```
 SELECT FIRST_NAME,
        INITCAP(FIRST_NAME) AS PROPER_NAME
 ```
-![output 1](week3(outputs)/q13.png)
+![output 1](week3(outputs)/q13-a.png)
 
 # q14
 ```
@@ -198,14 +198,14 @@ SELECT FIRST_NAME,
        SUBSTR(FIRST_NAME, 1, 3) AS FIRST_THREE
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q15.png)
+![output 1](week3(outputs)/q15-a.png)
 
 # q16
 ```
 SELECT FIRST_NAME,
        INSTR(LOWER(FIRST_NAME), 'a') AS POSITION_OF_A
 ```
-![output 1](week3(outputs)/q16.png)
+![output 1](week3(outputs)/q16-a.png)
 
 # q17
 ```
@@ -213,14 +213,14 @@ SELECT EMPLOYEE_ID, FIRST_NAME, LAST_NAME,
        HIRE_DATE, SYSDATE AS CURRENT_DATE
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q17.png)
+![output 1](week3(outputs)/q17-a.png)
 
 # q18
 ```
 SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        NEXT_DAY(HIRE_DATE, 'MONDAY') AS NEXT_MONDAY
 ```
-![output 1](week3(outputs)/q18.png)
+![output 1](week3(outputs)/q18-a.png)
 
 # q19
 ```
@@ -228,7 +228,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        ADD_MONTHS(HIRE_DATE, 6) AS AFTER_SIX_MONTHS
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q19.png)
+![output 1](week3(outputs)/q19-a.png)
 
 # q20
 ```
@@ -237,7 +237,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
 FROM EMPLOYEE;
 
 ```
-![output 1](week3(outputs)/q20.png)
+![output 1](week3(outputs)/q20-a.png)
 
 # q21
 ```
@@ -245,7 +245,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        ROUND(MONTHS_BETWEEN(SYSDATE, HIRE_DATE), 2) AS MONTHS_WORKED
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q21.png)
+![output 1](week3(outputs)/q21-a.png)
 
 
 # q22
@@ -254,7 +254,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, SALARY,
        LEAST(SALARY, 60000) AS SMALLER_VALUE
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q22.png)
+![output 1](week3(outputs)/q22-a.png)
 
 # q23
 ```
@@ -262,7 +262,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, SALARY,
        GREATEST(SALARY, 60000) AS GREATER_VALUE
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q23.png)
+![output 1](week3(outputs)/q23-a.png)
 
 # q24
 ```
@@ -270,7 +270,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME, HIRE_DATE,
        TRUNC(HIRE_DATE, 'MONTH') AS FIRST_DAY_OF_MONTH
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q21-a.png)
+![output 1](week3(outputs)/q21-a-a.png)
 
 # q25
 ```
@@ -286,7 +286,7 @@ SELECT EMPLOYEE_ID, FIRST_NAME,
        TO_CHAR(HIRE_DATE, 'DAY, DD-MON-YYYY') AS FORMATTED_DATE
 FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/q2-a.png)
+![output 1](week3(outputs)/q26-a.png)
 
 # q27
 ```

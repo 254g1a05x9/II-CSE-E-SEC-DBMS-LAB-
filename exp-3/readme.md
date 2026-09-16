@@ -17,7 +17,7 @@ CREATE TABLE EMPLOYEE
     CITY VARCHAR2(20)
 );
 ```
-![output 1](week3(outputs)/create emp.png)
+![output 1](week3(outputs)/createemp.png)
 
 # Inserting values
 
@@ -63,7 +63,7 @@ VALUES (110, 'Arjun', 'Singh', 'M', 'MK_MAN', 'Marketing', 68000, 5,
         TO_DATE('30-APR-2019','DD-MON-YYYY'), 'Jaipur');
 
 ```
-![output 2](week3(outputs)/insert emp.png)
+![output 2](week3(outputs)/insertemp.png)
 
 
 # Describing the table 
@@ -71,7 +71,7 @@ VALUES (110, 'Arjun', 'Singh', 'M', 'MK_MAN', 'Marketing', 68000, 5,
 ```      	 
 SELECT * FROM EMPLOYEE;
 ```
-![output 1](week3(outputs)/dis emp.png)
+![output 1](week3(outputs)/disemp.png)
 
 
 # q1

@@ -9,7 +9,7 @@ CREATE TABLE STUDENT (
     MARKS NUMBER(3)
 );
 ```
-![output1](3A-OUTPUT1.png)
+![output1](5A-OUTPUT1.png)
 ```
 #insert data
 INSERT INTO STUDENT VALUES (101, 'Ayesha', 'CSE', 85);
@@ -30,7 +30,7 @@ INSERT INTO STUDENT VALUES (115, 'Sara', 'ECE', 81);
 
 COMMIT;
 ```
-![output2](3A-OUTPUT2.png)
+![output2](5A-OUTPUT2.png)
 ```
 #code
 --PL/SQL CODE
@@ -82,9 +82,9 @@ EXCEPTION
 END;
 /
 ```
-![output3](3A-OUTPUT3.png)
-![output4](3A-OUTPUT4.png)
-![output5](3A-OUTPUT5.png)
+![output3](5A-OUTPUT3.png)
+![output4](5A-OUTPUT4.png)
+![output5](5A-OUTPUT5.png)
 
 ---3(B)
 ```
@@ -129,9 +129,9 @@ EXCEPTION
 END;
 /
 ```
-![outout 1](3B-FIRST.png)
+![outout 1](5B-FIRST.png)
 ```
 SELECT * FROM STUDENT1
 WHERE STUDENT_ID BETWEEN 201 AND 203;
 ```
-![output 2](3B-SECOND.png)
+![output 2](5B-SECOND.png)

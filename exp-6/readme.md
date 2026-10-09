@@ -94,7 +94,7 @@ EXCEPTION
 END;
 /
 ```
-![output](6A.png)
+![output](week6(outputs)/6A.png)
 
 ---6(B)
 ```
@@ -252,5 +252,5 @@ EXCEPTION
 END;
 /
 ```
-![output](6B-1.png)
-![output](6B-2.png)
+![output](week6(outputs)/6B-1.png)
+![output](week6(outputs)/6B-2.png)

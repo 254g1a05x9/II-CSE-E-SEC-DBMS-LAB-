@@ -25,7 +25,7 @@ COMMIT;
 SELECT student_id, student_info
 FROM student_json_data;
 ```
-![output](virtual_lab(outputs)/1-op1.png)
+![output](outputs/1-op1.png)
 ```
 SELECT student_id,
        REGEXP_SUBSTR(DBMS_LOB.SUBSTR(student_info, 4000, 1),
@@ -38,7 +38,7 @@ FROM student_json_data
 WHERE REGEXP_SUBSTR(DBMS_LOB.SUBSTR(student_info, 4000, 1),
                     '"course":"([^"]+)"', 1, 1, NULL, 1) = 'CSE';
 ```
-![output](virtual lab(outputs)/1-op2.png)
+![output](outputs/1-op2.png)
 ```
 CREATE INDEX idx_student_course
 ON student_json_data (
@@ -57,7 +57,7 @@ FROM student_json_data
 WHERE REGEXP_SUBSTR(DBMS_LOB.SUBSTR(student_info, 4000, 1),
                     '"course":"([^"]+)"', 1, 1, NULL, 1) = 'CSE';
 ```
-![output](virtual lab(outputs)/1-op3.png)
+![output](outputs/1-op3.png)
 ```
 SELECT index_name,
        table_name,

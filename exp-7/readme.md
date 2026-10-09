@@ -60,7 +60,7 @@ BEGIN
 END;
 /
 ```
-![output 1](7A-output1.png)
+![output 1](week7(outputs)/7A-output1.png)
 ```
 DECLARE
     V_NAME  VARCHAR2(30);
@@ -78,7 +78,7 @@ BEGIN
 END;
 /
 ```
-![output 2](7A-output2.png)
+![output 2](week7(outputs)/7A-output2.png)
 
 
 -- EXPERIMENT-7(b)
@@ -124,7 +124,7 @@ SELECT EMPLOYEE_ID,
        CALCULATE_ANNUAL_SALARY(MONTHLY_SALARY) AS ANNUAL_SALARY
 FROM EMPLOYEE;
 ```
-![output 1](7B-output1.png)
+![output 1](week7(outputs)/7B-output1.png)
 
 -- EXPERIMENT-7(b)
 ```
@@ -182,13 +182,13 @@ SELECT 'B.Tech' AS COURSE,
        COUNT_STUDENTS('B.Tech') AS TOTAL_STUDENTS
 FROM DUAL;
 ```
-![output 1](7B-output2.png)
+![output 1](week7(outputs)/7B-output2.png)
 ```
 SELECT 'BCA' AS COURSE,
        COUNT_STUDENTS('BCA') AS TOTAL_STUDENTS
 FROM DUAL;
 ```
-![output 2](7B-output3.png)
+![output 2](week7(outputs)/7B-output3.png)
 
 -- EXPERIMENT-7(b)
 ```
@@ -258,4 +258,4 @@ FROM STUDENT12;
 
 IS
 ```
-![output 2](7B-output4.png)
+![output 2](week7(outputs)/7B-output4.png)

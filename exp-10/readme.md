@@ -1,3 +1,4 @@
+```
 SET SERVEROUTPUT ON;
 
 -- Step 1 & 2: Create EMPLOYEE table
@@ -22,7 +23,9 @@ COMMIT;
 SELECT *
 FROM EMPLOYEE
 WHERE EMP_NAME = 'Ravi';
+```
 ![op1](op1.png)
+```
 -- Step 5: Display execution plan before indexing
 EXPLAIN PLAN FOR
 SELECT *
@@ -31,7 +34,9 @@ WHERE EMP_NAME = 'Ravi';
 
 SELECT *
 FROM TABLE(DBMS_XPLAN.DISPLAY);
+```
 ![op2](op2.png)
+```
 -- Step 6: Create index on search column
 CREATE INDEX EMP_NAME_INDEX
 ON EMPLOYEE(EMP_NAME);
@@ -49,7 +54,9 @@ WHERE EMP_NAME = 'Ravi';
 
 SELECT *
 FROM TABLE(DBMS_XPLAN.DISPLAY);
+```
 ![op3](op3.png)
+```
 -- Step 9 & 10: Display index information
 SELECT INDEX_NAME,
        TABLE_NAME,
@@ -65,4 +72,5 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Non-indexed and indexed search operations completed successfully.');
 END;
 /
+```
 ![op4](op4.png)

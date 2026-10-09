@@ -24,7 +24,7 @@ SELECT *
 FROM EMPLOYEE
 WHERE EMP_NAME = 'Ravi';
 ```
-![op1](op1.png)
+![op1](week10(outputs)/op1.png)
 ```
 -- Step 5: Display execution plan before indexing
 EXPLAIN PLAN FOR
@@ -35,7 +35,7 @@ WHERE EMP_NAME = 'Ravi';
 SELECT *
 FROM TABLE(DBMS_XPLAN.DISPLAY);
 ```
-![op2](op2.png)
+![op2](week10(outputs)/op2.png)
 ```
 -- Step 6: Create index on search column
 CREATE INDEX EMP_NAME_INDEX
@@ -55,7 +55,7 @@ WHERE EMP_NAME = 'Ravi';
 SELECT *
 FROM TABLE(DBMS_XPLAN.DISPLAY);
 ```
-![op3](op3.png)
+![op3](week10(outputs)/op3.png)
 ```
 -- Step 9 & 10: Display index information
 SELECT INDEX_NAME,
@@ -73,4 +73,4 @@ BEGIN
 END;
 /
 ```
-![op4](op4.png)
+![op4](week10(outputs)/op4.png)

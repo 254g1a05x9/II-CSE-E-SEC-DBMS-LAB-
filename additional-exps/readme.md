@@ -65,7 +65,7 @@ EXCEPTION
 END;
 /
 ```
-![output](<additional exps(output)/op1.png>)
+![output](<additional exps(outputs)/op1.png>)
 
 
 
@@ -144,8 +144,8 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Annual Salary   : ' || v_annual_salary);
 END;
 ```
-![output](<additional exps(output)/op2.png>)
-![output](<additional exps(output)/op3.png>)
+![output](<additional exps(outputs)/op2.png>)
+![output](<additional exps(outputs)/op3.png>)
 
 
 
@@ -262,4 +262,4 @@ BEGIN
 END;
 /
 ```
-![output](<additional exps(output)/op4.png>)
+![output](<additional exps(outputs)/op4.png>)

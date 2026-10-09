@@ -56,7 +56,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op1.png)
+![output 1](week8(outputs)/op1.png)
 -- EXPERIMENT-8
 -- PROGRAM 2: CURSOR WITH PARAMETERS
 -- HOSPITAL MANAGEMENT
@@ -114,7 +114,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op2.png)
+![output 1](week8(outputs)/op2.png)
 ```
 SET SERVEROUTPUT ON;
 DROP TABLE EMPLOYEE;
@@ -166,7 +166,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op3.png)
+![output 1](week8(outputs)/op3.png)
 -- Display updated table
 ```
 SELECT EMPLOYEE_ID,
@@ -175,7 +175,7 @@ SELECT EMPLOYEE_ID,
        SALARY
 FROM EMPLOYEE;
 ```
-![output 2](op4.png)
+![output 2](week8(outputs)/op4.png)
 ```
 SET SERVEROUTPUT ON;
 
@@ -225,7 +225,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op5.png)
+![output 1](week8(outputs)/op5.png)
 -- Display updated BOOK table
 ```
 SELECT BOOK_ID,
@@ -234,7 +234,7 @@ SELECT BOOK_ID,
        AVAILABLE_COPIES
 FROM BOOK;
 ```
-![output 2](op6.png)
+![output 2](week8(outputs)/op6.png)
 ```
 SET SERVEROUTPUT ON;
 
@@ -284,7 +284,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op7.png)
+![output 1](week8(outputs)/op7.png)
 ```
 -- Display updated PRODUCT table
 SELECT PRODUCT_ID,
@@ -293,7 +293,7 @@ SELECT PRODUCT_ID,
        QUANTITY
 FROM PRODUCT;
 ```
-![output 2](op8.png)
+![output 2](week8(outputs)/op8.png)
 ```
 SET SERVEROUTPUT ON;
 
@@ -360,7 +360,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op9.png)
+![output 1](week8(outputs)/op9.png)
 ```
 SET SERVEROUTPUT ON;
 
@@ -427,7 +427,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op10.png)
+![output 1](week8(outputs)/op10.png)
 ```
 SET SERVEROUTPUT ON;
 
@@ -499,7 +499,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op11.png)
+![output 1](week8(outputs)/op11.png)
 ``` 
 SET SERVEROUTPUT ON;
 
@@ -568,7 +568,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op12.png)
+![output 1](week8(outputs)/op12.png)
 
 -- Display updated EMPLOYEE table
 ```
@@ -579,7 +579,7 @@ SELECT EMPLOYEE_ID,
        EXPERIENCE
 FROM EMPLOYEE;
 ```
-![output 2](op13.png)
+![output 2](week8(outputs)/op13.png)
 ```
 SET SERVEROUTPUT ON;
 
@@ -702,7 +702,7 @@ BEGIN
 END;
 /
 ```
-![output 1](op14.png)
+![output 1](week8(outputs)/op14.png)
 -- Display final updated table
 ```
 SELECT STUDENT_ID,
@@ -713,4 +713,4 @@ SELECT STUDENT_ID,
        SCHOLARSHIP_STATUS
 FROM STUDENT;
 ```
-![output 2](op15.png)
+![output 2](week8(outputs)/op15.png)

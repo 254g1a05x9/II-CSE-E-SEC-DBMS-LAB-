@@ -1,3 +1,4 @@
+```
 SET SERVEROUTPUT ON;
 
 -- Step 1: Create EMPLOYEE table
@@ -60,14 +61,18 @@ EXCEPTION
         );
 END;
 /
-![output 1](op1.png)
+```
+![output 1](week9(outputs)/op1.png)
+```
 -- Step 5: Display table contents
 SELECT EMPLOYEE_ID,
        EMPLOYEE_NAME,
        DEPARTMENT,
        SALARY
 FROM EMPLOYEE;
-![output 2](op2.png)
+```
+![output 2](week9(outputs)/op2.png)
+```
 SET SERVEROUTPUT ON;
 
 -- Create main EMPLOYEE table
@@ -121,10 +126,14 @@ COMMIT;
 
 -- Display main table
 SELECT * FROM EMPLOYEE;
-![output 1](op3.png)
+```
+![output 1](week9(outputs)/op3.png)
+```
 -- Display audit table
 SELECT * FROM EMPLOYEE_AUDIT;
-![output 2](op4.png)
+```
+![output 2](week9(outputs)/op4.png)
+```
 SET SERVEROUTPUT ON;
 
 -- Create EMPLOYEE table
@@ -196,14 +205,18 @@ EXCEPTION
         );
 END;
 /
-![output 1](op5.png)
+```
+![output 1](week9(outputs)/op5.png)
+```
 -- Display final table
 SELECT EMPLOYEE_ID,
        EMPLOYEE_NAME,
        DEPARTMENT,
        SALARY
 FROM EMPLOYEE;
-![output 2](op6.png)
+```
+![output 2](week9(outputs)/op6.png)
+```
 SET SERVEROUTPUT ON;
 
 
@@ -254,11 +267,15 @@ COMMIT;
 -- Display remaining EMPLOYEE records
 SELECT *
 FROM EMPLOYEE;
-![output 1](op7.png)
+```
+![output 1](week9(outputs)/op7.png)
+```
 -- Display DELETE LOG
 SELECT *
 FROM DELETE_LOG;
-![output 2](op8.png)
+```
+![output 2](week9(outputs)/op8.png)
+```
 SET SERVEROUTPUT ON;
 
 -- Create base EMPLOYEE table
@@ -299,14 +316,19 @@ SET SALARY = 40000
 WHERE EMPLOYEE_ID = 101;
 
 COMMIT;
-![op1](op9.png)
+```
+![op1](week9(outputs)/op9.png)
+```
 -- Display base table
 SELECT EMPLOYEE_ID,
        EMPLOYEE_NAME,
        DEPARTMENT,
        SALARY
 FROM EMPLOYEE;
-1[op2](op10.png)BEGIN
+```
+1[op2](week9(outputs)/op10.png)
+```
+BEGIN
         'Employee record updated through the view.'
     );
     UPDATE EMPLOYEE
@@ -315,3 +337,4 @@ FROM EMPLOYEE;
         DEPARTMENT = :NEW.DEPARTMENT,
         SALARY = :NEW.SALARY
     WHERE EMPLOYEE_ID = :OLD.EMPLOYEE_ID;
+```

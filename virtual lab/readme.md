@@ -25,7 +25,7 @@ COMMIT;
 SELECT student_id, student_info
 FROM student_json_data;
 ```
-![output](outputs/1-op1.png)
+![output](<virtual lab(outputs)/1-op1.png>)
 ```
 SELECT student_id,
        REGEXP_SUBSTR(DBMS_LOB.SUBSTR(student_info, 4000, 1),
@@ -38,7 +38,7 @@ FROM student_json_data
 WHERE REGEXP_SUBSTR(DBMS_LOB.SUBSTR(student_info, 4000, 1),
                     '"course":"([^"]+)"', 1, 1, NULL, 1) = 'CSE';
 ```
-![output](outputs/1-op2.png)
+![output](<virtual lab(outputs)/1-op2.png>)
 ```
 CREATE INDEX idx_student_course
 ON student_json_data (
@@ -57,7 +57,7 @@ FROM student_json_data
 WHERE REGEXP_SUBSTR(DBMS_LOB.SUBSTR(student_info, 4000, 1),
                     '"course":"([^"]+)"', 1, 1, NULL, 1) = 'CSE';
 ```
-![output](outputs/1-op3.png)
+![output](<virtual lab(outputs)/1-op3.png>)
 ```
 SELECT index_name,
        table_name,
@@ -65,7 +65,7 @@ SELECT index_name,
 FROM user_indexes
 WHERE index_name = 'IDX_STUDENT_COURSE';
 ```
-![output](outputs/1-op4.png)
+![output](<virtual lab(outputs)/1-op4.png>)
 
 ---virtual lab-2
 # Virtual Columns in Oracle 11g
@@ -98,7 +98,7 @@ VALUES (3, 'Charlie', 78, 82, 80);
 COMMIT;
 DESC students_scores;
 ```
-![output](outputs/2-op1.png)
+![output](<virtual lab(outputs)/2-op1.png>)
 ```
 SELECT student_id,
        name,
@@ -109,7 +109,7 @@ SELECT student_id,
        average_marks
 FROM students_scores;
 ```
-![output](outputs/2-op2.png)
+![output](<virtual lab(outputs)/2-op2.png>)
 ```
 SELECT student_id,
        name,
@@ -118,7 +118,7 @@ SELECT student_id,
 FROM students_scores
 WHERE total_marks >= 250;
 ```
-![output](outputs/2-op3.png)
+![output](<virtual lab(outputs)/2-op3.png>)
 ```
 CREATE INDEX idx_total_marks
 ON students_scores(total_marks);
@@ -128,5 +128,5 @@ SELECT index_name,
 FROM user_indexes
 WHERE index_name = 'IDX_TOTAL_MARKS';
 ```
-![output](outputs/2-op4.png)
+![output](<virtual lab(outputs)/2-op4.png>)
 

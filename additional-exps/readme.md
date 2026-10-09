@@ -64,7 +64,8 @@ EXCEPTION
         );
 END;
 /
-![output](output/op1.png)
+```
+![output](<additional exps(output)/op1.png>)
 
 
 
@@ -143,8 +144,8 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Annual Salary   : ' || v_annual_salary);
 END;
 ```
-![output](output/op2.png)
-![output](output/op3.png)
+![output](<additional exps(output)/op2.png>)
+![output](<additional exps(output)/op3.png>)
 
 
 
@@ -171,7 +172,7 @@ CREATE TABLE employee (
 
 ## Insert Sample records
 
-```
+
 INSERT INTO employee VALUES
 (101, 'Ravi', 'CSE', 'Software Engineer', 35000);
 
@@ -198,14 +199,12 @@ INSERT INTO employee VALUES
 
 COMMIT;
 
-```
+
 
 ## Verify the records
 
-```
 SELECT * FROM employee;
 
-```
 
 SET SERVEROUTPUT ON;
 
@@ -262,5 +261,5 @@ BEGIN
 
 END;
 /
-
-![output](output/op4.png)
+```
+![output](<additional exps(output)/op4.png>)

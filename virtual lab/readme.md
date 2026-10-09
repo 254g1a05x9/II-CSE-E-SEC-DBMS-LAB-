@@ -25,7 +25,7 @@ COMMIT;
 SELECT student_id, student_info
 FROM student_json_data;
 ```
-![output](outputs/1-op1.png)
+![output](1-op1.png)
 ```
 SELECT student_id,
        REGEXP_SUBSTR(DBMS_LOB.SUBSTR(student_info, 4000, 1),
